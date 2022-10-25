@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>BeerSong.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d55fde;}
+.s1 { color: #bbbbbb;}
+.s2 { color: #d19a66;}
+.s3 { color: #89ca78;}
+.s4 { color: #5c6370;}
+</style>
+</head>
+<body bgcolor="#282c34">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+BeerSong.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">Chapter01;</span>
+
+
+<span class="s0">public class </span><span class="s1">BeerSong {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s0">int </span><span class="s1">beerNum = </span><span class="s2">99</span><span class="s1">;</span>
+        <span class="s1">String word = </span><span class="s3">&quot;bottles&quot;</span><span class="s1">;</span>
+        <span class="s0">while </span><span class="s1">(beerNum &gt; </span><span class="s2">0</span><span class="s1">) {</span>
+            <span class="s0">if </span><span class="s1">(beerNum == </span><span class="s2">1</span><span class="s1">) {</span>
+                <span class="s1">word = </span><span class="s3">&quot;bottle&quot;</span><span class="s1">;</span>
+            <span class="s1">}</span>
+            <span class="s1">System.out.println(beerNum + </span><span class="s3">&quot; &quot; </span><span class="s1">+ word + </span><span class="s3">&quot; of beer on the wall&quot;</span><span class="s1">);</span>
+            <span class="s1">System.out.println(beerNum + </span><span class="s3">&quot; &quot; </span><span class="s1">+ word + </span><span class="s3">&quot; of beer&quot;</span><span class="s1">);</span>
+            <span class="s1">System.out.println(</span><span class="s3">&quot;Take one down.&quot;</span><span class="s1">);</span>
+            <span class="s1">System.out.println(</span><span class="s3">&quot;Pass it around.&quot;</span><span class="s1">);</span>
+            <span class="s1">beerNum = beerNum - </span><span class="s2">1</span><span class="s1">;</span>
+            <span class="s0">if </span><span class="s1">(beerNum &gt; </span><span class="s2">0</span><span class="s1">) {</span>
+                <span class="s1">System.out.println(beerNum + </span><span class="s3">&quot; &quot; </span><span class="s1">+ word + </span><span class="s3">&quot; of beer on the wall&quot;</span><span class="s1">);</span>
+            <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">System.out.println(</span><span class="s3">&quot;No more bottles of beer on the wall&quot;</span><span class="s1">);</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+<span class="s4">/* 
+OUTPUT: 
+99 bottles of beer on the wall 
+99 bottles of beer 
+Take one down. 
+Pass it around. 
+... 
+... 
+... 
+... 
+1 bottles of beer on the wall 
+1 bottle of beer on the wall 
+1 bottle of beer 
+Take one down. 
+Pass it around. 
+No more bottles of beer on the wall 
+*/</span></pre>
+</body>
+</html>
